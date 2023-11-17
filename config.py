@@ -12,7 +12,6 @@ DOMAIN_FILE_MAPPING = {
     3: ["student_anxiety.pkl"],
     4: ["bullying.pkl", "abuse.pkl"],
     5: ["do_not_answer_en.pkl"]
-
 }
 
 FILE_DOMAIN_MAPPING = {
