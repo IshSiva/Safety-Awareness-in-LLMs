@@ -14,9 +14,17 @@ DOMAIN_DATASET_MAPPING = {
     "cyberbullying.csv": 4,
     "suspicious_activity.csv": 4,
     "covid_fake_news_data.csv": 2,
-    "true_false.csv":2
+    "true_false.csv":2,
+    "fake_news.csv":2
 }
 
+
+BERT_EMBEDDING_FILES = {
+    "Discrimination, Exclusion, Toxicity": "bert_discrimination.pkl",
+    "Misinformation": "bert_misinfo.pkl" ,
+    "HCI harms": "bert_hci_harms_df.pkl",
+    "Malicious Uses": "bert_malicious_activity.pkl"
+}
 
 dataset_category_mapping = {
     "adult_content":
@@ -73,10 +81,16 @@ dataset_category_mapping = {
        "column_text": "statement",
        "column_label": "label",
        "column_mapping": {0:16, 1:17}
+    },
+    "fake_news":
+    {
+        "column_text": "content",
+        "column_label": "binary_label",
+        "column_mapping": {1:18}
     }
    
 }
 
 #1 is not safe 0 is safe
 index_class_mapping = {0: 0, 1:1, 2: 0, 3: 1, 4: 0 , 5: 1, 6: 0, 7: 1, 8: 1,\
-                       9: 0, 10: 0, 11: 1, 12: 0, 13: 1, 14: 0, 15: 1, 16: 1, 17: 0,}
+                       9: 0, 10: 0, 11: 1, 12: 0, 13: 1, 14: 0, 15: 1, 16: 1, 17: 0, 18:1}
