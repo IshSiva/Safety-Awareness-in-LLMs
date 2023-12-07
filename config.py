@@ -1,3 +1,6 @@
+LAYERS = [1, 4, 8, 12, 16, 20, 24, 28, 32]
+DOMAINS = ["Discrimination, Exclusion, Toxicity", "HCI harms", "Malicious Uses", "Misinformation"]
+
 DOMAIN_INDEX_MAPPING = {
     "Discrimination, Exclusion, Toxicity": 1,
     "Misinformation": 2,
@@ -101,4 +104,3 @@ dataset_category_mapping = {
 #1 is not safe 0 is safe
 index_class_mapping = {0: 0, 1:1, 2: 0, 3: 1, 4: 0 , 5: 1, 6: 0, 7: 1, 8: 1,\
                        9: 0, 10: 0, 11: 1, 12: 0, 13: 1, 14: 0, 15: 1, 16: 1, 17: 0,}
-
